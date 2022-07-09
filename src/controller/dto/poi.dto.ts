@@ -16,6 +16,7 @@ export interface RequestOptimalPOIDTO {
   privacy: string;
   minRank: number;
   type: POIType;
+  dummyOrPerturbationDigits: number;
 }
 
 export class OptimalPOIResponseDTO {
