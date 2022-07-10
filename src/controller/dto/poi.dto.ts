@@ -6,7 +6,7 @@ enum POIType {
   DEPARTMENT = 'department',
 }
 
-interface IPosition {
+export interface IPosition {
   latitude: number;
   longitude: number;
 }

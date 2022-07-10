@@ -1,5 +1,5 @@
 import { Request, Response, Router } from 'express';
-import { privacyService } from '../service/privacy.service';
+import { poiService } from '../service/poi.service';
 import { OptimalPOIResponseDTO, RequestOptimalPOIDTO } from './dto/poi.dto';
 
 const router = Router();
@@ -7,7 +7,7 @@ const router = Router();
 router.post('', async (req: Request, res: Response) => {
   const info: RequestOptimalPOIDTO = req.body;
 
-  const poiList = await privacyService.privacy(info);
+  const poiList = await poiService.optimalPOI(info);
   res.status(200).send(poiList);
 });
 
