@@ -27,8 +27,6 @@ class POIService {
       positions: privacyPositions,
     });
 
-    console.log(body);  
-
     const axiosTest = async () => {
       try {
         const { data: response } = await axios.post('http://localhost:3001/poi/optimal', body, {
