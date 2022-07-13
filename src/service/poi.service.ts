@@ -43,6 +43,7 @@ class POIService {
           return { items: [axiosResponse.items[0]] };
         }
       } catch (error) {
+        console.log(error);
         return {} as OptimalPOIResponseDTO;
       }
     };
